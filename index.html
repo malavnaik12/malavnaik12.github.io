@@ -1,7 +1,217 @@
-<header>
-    Hi, I'm Malav and I'm glad you're here!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
 
-</header>
-<p>
-    This is the future home of my personal website. Stay tuned to see what updates are coming in the pipeline.
-</p>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #777;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background-color: #00aaff;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+        }
+
+        #about p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        #portfolio .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .project {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-content h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project-content p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-content a {
+            text-decoration: none;
+            color: #00aaff;
+            font-weight: bold;
+        }
+
+        #contact {
+            text-align: center;
+        }
+
+        #contact a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00aaff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        #contact a:hover {
+            background-color: #0088cc;
+        }
+
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            color: #777;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>Your Professional Title or Tagline</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                <!-- Your brief bio here -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mauris quam. Sed euismod, nisl eget consectetur sagittis, nisl nunc consequat nunc, euismod aliquam nisl nunc euismod nunc.
+            </p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="projects">
+                <!-- Project 1 -->
+                <div class="project">
+                    <img src="path/to/your/project1-image.jpg" alt="Project 1">
+                    <div class="project-content">
+                        <h3>Project Title 1</h3>
+                        <p>
+                            Brief description of your project. Explain what the project is about and what technologies you used.
+                        </p>
+                        <a href="#!">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <img src="path/to/your/project2-image.jpg" alt="Project 2">
+                    <div class="project-content">
+                        <h3>Project Title 2</h3>
+                        <p>
+                            Brief description of your project. Explain what the project is about and what technologies you used.
+                        </p>
+                        <a href="#!">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <a href="https://linktr.ee/yourusername" target="_blank">My Linktree</a>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Your Name. All rights reserved.
+    </footer>
+
+</body>
+</html>
