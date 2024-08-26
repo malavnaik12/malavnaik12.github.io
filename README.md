@@ -1,2 +1,1 @@
-# malavnaik12.github.io
-Repository to host Personal Website
+# Malav Naik's Personal Website
